@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple);
+* {
+    margin: 0;
+    padding: 2;
+    box-sizing: border-box;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body,
+.wrapper .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    min-height: 100vh;
+    background: #48d1cc;
+    background-image: url("pexels.jpg");
+}
+
+.wrapper {
+    width: 440px;
+    background: rgb(221, 189, 7);
+    border-radius: 100px;
+    padding: 30px 30px 40px;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.img {
+    max-width: 250px;
+    max-height: 1000px;
+}
+
+.wrapper h1 {
+    font-size: 50px;
+    font-weight: 10;
+    margin: 100px 0;
+}
+
+.wrapper .content {
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    border-radius: 300px;
+    margin-top: 2px;
+    margin-left: 3px;
+    justify-content: space-between;
+}
+
+.wrapper .content.disable {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.content .column {
+    width: 200px;
+    height: 40px;
+    border-radius: 2px;
+    padding: 0 20px;
+    width: calc(100% / 4 - 5px);
+    align-content: space-around;
+}
+
+.column select {
+    outline: none;
+    border: none;
+    height: 0 200px;
+    width: 100%;
+    font-size: 14px;
+    background: #0c98f5;
+    color: rgb(0, 9, 16);
+    transition: width 1s, height 1s, border-radius 2s;
+}
+
+.column select:hover {
+    width: 150%;
+    height: 150%;
+    border-radius: 30px;
+}
+
+button {
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px 0;
+    border-radius: 39px;
+    background: rgb(28, 189, 125);
+    float: left;
+    transition: 2s;
+    align-content: stretch;
+}
+
+button:hover {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgb(214, 22, 128);
+    border: 20px;
+}
+
+.cat {
+    float: left;
+    border: #48d1cc;
+}
